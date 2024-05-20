@@ -52,11 +52,11 @@ void CircleList::PrintAll() {
     if(tail == nullptr)
         std::cout << "저장된 노드가 없습니다!!" << std::endl;
 
-    temp = tail -> getNext(); // cur가 꼬리의 다음 노드(원형의 첫 노드)를 가리키도록 설정
+    temp = tail -> getNext(); // temp가 꼬리의 다음 노드(원형의 첫 노드)를 가리키도록 설정
 
     for(int i = 0; i < existCount; i++) {
-        temp -> getData() -> printData(); // cur가 가리키고 있는 노드에 저장된 정보들을 출력
-        temp = temp -> getNext(); // cur가 다음 노드를 가리키도록 설정
+        temp -> getData() -> printData(); // temp가 가리키고 있는 노드에 저장된 정보들을 출력
+        temp = temp -> getNext(); // temp가 다음 노드를 가리키도록 설정
     }
 }
 void CircleList::Delete(const int target) {
